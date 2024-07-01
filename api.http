@@ -1,0 +1,28 @@
+### Recuperar todas los usuarios
+GET http://localhost:1234/users
+
+### Recuperar un usuario
+GET http://localhost:1234/users/dde6e342-37c9-11ef-b8b8-1cf885b3f09c
+
+### Crear un usuario
+POST http://localhost:1234/users
+Content-Type: application/json
+
+{
+  "username": "Nicole",
+  "email": "nicole@hotmail.com",
+  "password": "1234"
+}
+
+### Actualizar un usuario
+PUT http://localhost:1234/users/fad432f0-37d0-11ef-b8b8-1cf885b3f09c
+Content-Type: application/json
+
+{
+  "email": "carlos@gmail.com",
+  "username": "Carlos"
+}
+
+### Eliminar un usuario
+DELETE http://localhost:1234/users/ee868e38-37dc-11ef-b8b8-1cf885b3f09c
+
